@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "declaration": false,
+    "noResolve": false,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "outDir": "./dist/",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "module": "esnext",
+    "esModuleInterop": true,
+    "baseUrl": "./src"
+    /* Base directory to resolve non-absolute module names. */,
+    "paths": {
+      "pages": [
+        "./pages"
+      ],
+      "assets": [
+        "./assets"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./src/"
+  ]
+}

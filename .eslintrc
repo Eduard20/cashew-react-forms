@@ -1,0 +1,48 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "globals": {
+    "GLOBALS": false,
+    "configure": false,
+    "localDevBackend": false,
+    "mount": false,
+    "React": false,
+    "render": false,
+    "shallow": false
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "react",
+    "prettier"
+  ],
+  "parserOptions": {
+    "tsconfigRootDir": "./",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "es6": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "rules": {
+    "no-prototype-builtins": 0,
+    "react/display-name": 0,
+    "react/prop-types": 0,
+    "@typescript-eslint/no-var-requires": "off"
+  }
+}
