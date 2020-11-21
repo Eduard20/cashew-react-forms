@@ -9,11 +9,12 @@
     "eslint": "eslint --cache \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --fix --ext .js,.jsx",
     "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "lint-code": "yarn eslint && yarn prettier",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest .test.js"
   },
   "author": "Eduard Simonyan",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.12.5",
     "react": "17.0.0",
     "react-dom": "17.0.0",
     "react-hook-form": "^6.11.4",
@@ -22,11 +23,14 @@
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "7.9.0",
     "@babel/preset-react": "7.9.4",
     "@babel/preset-typescript": "^7.12.1",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.4",
@@ -49,6 +53,7 @@
     "html-loader": "0.5.5",
     "html-webpack-plugin": "4.0.2",
     "husky": "^4.3.0",
+    "jest": "^26.6.3",
     "lint-staged": "^10.4.1",
     "prettier": "2.0.2",
     "ts-loader": "^8.0.7",
