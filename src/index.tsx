@@ -4,9 +4,9 @@ import Root from 'pages/root'
 import { ResetStyles } from './reset'
 
 ReactDOM.render(
-    <>
-        <ResetStyles/>
-        <Root/>
-    </>,
-    document.getElementById('root')
+  <>
+    <ResetStyles />
+    <Root />
+  </>,
+  document.getElementById('root')
 )
